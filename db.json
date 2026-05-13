@@ -1,0 +1,15 @@
+{
+  "produtos": [
+    {
+      "id": "BVRLWnpEa1E",
+      "produto": "Camisa Polo",
+      "sku": "CAM-001",
+      "categoria": "Vestuário",
+      "quantidade": "100",
+      "fornecedor": "CLN Clothes",
+      "unidade": "unidade",
+      "descricao": "Camisa Polo azul marinha - CLN"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

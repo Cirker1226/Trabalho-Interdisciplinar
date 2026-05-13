@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculaDOR - Produtos</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
+    <main class="conteudo">
         <nav class="menu-lateral">
             <div class="logo">
                 <img src="img/logo2.png" alt="logo calculaDOR">
@@ -135,12 +136,42 @@
                 </div>
 
                 <div class="confirmar">
-                    <button type="limpar">Limpar</button>
-                    <button type="button">Cadastrar Produto</button>
+                    <button class="btn btn-light" onclick="limparInputs()">Limpar</button>
+                    <button class="btn btn-primary" onclick="cadastrarProduto()">Cadastrar Produto</button>
                 </div>
+            </div>
 
+
+            <div class="tabela">
+                <div class="row tabela-fundo">
+                    <h1>Produtos Cadastrados</h1>
+                    <div class="col-sm-12">
+                        <table id="grid-contatos" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">SKU</th>
+                                    <th scope="col">Categoria</th>
+                                    <th scope="col">Quantidade</th>
+                                    <th scope="col">Fornecedor</th>
+                                    <th scope="col">Tipo de Embalagem</th>
+                                    <th scope="col">Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-produtos">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-btn">
+                        <button class="btn btn-secondary" type="limpar">Editar</button>
+                        <button class="btn btn-danger" onclick="excluirProduto()">Apagar</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 </body>
+    <script src="app.js"></script>
 </html>
