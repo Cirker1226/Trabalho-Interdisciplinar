@@ -137,7 +137,7 @@
 
                 <div class="confirmar">
                     <button class="btn btn-light" onclick="limparInputs()">Limpar</button>
-                    <button class="btn btn-primary" onclick="cadastrarProduto()">Cadastrar Produto</button>
+                    <button class="btn btn-primary" onclick="cadastrarProduto()" id="botao-dinamico">Cadastrar Produto</button>
                 </div>
             </div>
 
@@ -155,7 +155,9 @@
                                     <th scope="col">Categoria</th>
                                     <th scope="col">Quantidade</th>
                                     <th scope="col">Fornecedor</th>
-                                    <th scope="col">Tipo de Embalagem</th>
+                                    <th scope="col">Embalagem</th>
+                                    <th scope="col">Custo</th>
+                                    <th scope="col">Venda</th>
                                     <th scope="col">Descrição</th>
                                 </tr>
                             </thead>
@@ -165,7 +167,7 @@
                     </div>
 
                     <div class="table-btn">
-                        <button class="btn btn-secondary" type="limpar">Editar</button>
+                        <button class="btn btn-secondary" onclick="editarProduto()" type="limpar">Editar</button>
                         <button class="btn btn-danger" onclick="excluirProduto()">Apagar</button>
                     </div>
                 </div>
